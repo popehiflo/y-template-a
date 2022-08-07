@@ -1,0 +1,1 @@
+# yuraq-template-a
