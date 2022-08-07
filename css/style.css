@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,regular,500,600,700,800);
+
+:root {
+  /* --primary-color: #cd9452; */
+  --primary-color: #fed330; /*--peru*/
+  --text-color-light: #222; /*--black*/
+  --bg-color-light:#f5f5f5; /*--light-bg*/
+}
+
+* {
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.43, 1.1, 0.62, 1.08);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
