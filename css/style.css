@@ -159,6 +159,13 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .menu .slide .box-container .box {
+    flex-flow: column;
+    text-align: center;
+  }
+}
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
