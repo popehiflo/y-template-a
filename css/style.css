@@ -25,3 +25,25 @@ html {
   scroll-padding-top: 6rem;
 }
 
+section {
+  padding: 5rem 10%;
+}
+
+/* MENU SECTION - STARTS */
+.menu {
+  background: var(--bg-color-light);
+}
+/* MENU SECTION - END */
+
+/* media queries */
+@media (max-width: 1200px) {
+  section {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 3rem 2rem;
+  }
+}
