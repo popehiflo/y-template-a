@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:200,300,regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:regular,500,600,700,italic,500italic,600italic,700italic);
 
 :root {
   /* --primary-color: #cd9452; */
@@ -44,6 +45,10 @@ html::-webkit-scrollbar-thumb {
   border-radius: 0.5rem;
 }
 
+header {
+  padding: 5rem 10%;
+}
+
 section {
   padding: 5rem 10%;
 }
@@ -80,6 +85,60 @@ section {
   letter-spacing: 0.2rem;
   /* border: 0.1rem solid var(--primary-color); */
 }
+
+/* HEADER - STARTS */
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black-color);
+  /* letter-spacing: 0.2rem; */
+}
+
+.header .logo span {
+  font-family: 'Ibarra Real Nova', sans-serif;
+  font-size: 3rem;
+}
+
+.header .navbar a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: var(--black-color);
+}
+
+.header .navbar a:hover {
+  color: var(--primary-color);
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--black-color);
+  display: none;
+}
+/* HEADER - ENDS */
+
+
+
+
+
+
+
+
 
 /* MENU SECTION - STARTS */
 .menu {
@@ -145,6 +204,9 @@ section {
 
 /* media queries */
 @media (max-width: 1200px) {
+  header {
+    padding: 3rem 5%;
+  }
   section {
     padding: 3rem 5%;
   }
@@ -154,16 +216,42 @@ section {
   html {
     font-size: 55%;
   }
+  header {
+    padding: 3rem 2rem;
+  }
   section {
     padding: 3rem 2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .menu .slide .box-container .box {
-    flex-flow: column;
+  #menu-btn {
+    display: inline-block;
+  }
+  .fa-times {
+    transform: rotate(180deg);
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    right: 2rem;
+    width: 30rem;
+    background: var(--white-color);
+    border: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display:block;
+    margin: 2rem;
     text-align: center;
   }
+  /* .menu .slide .box-container .box {
+    flex-flow: column;
+    text-align: center;
+  } */
 }
 
 @media (max-width: 450px) {
