@@ -288,7 +288,54 @@ section {
 }
 /* ABOUT - ENDS */
 
+/* POPULAR  - STARTS */
+.popular {
+  background: var(--bg-color-light);
+}
+.popular .slide {
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: var(--border-radius);
+  transform: scale(0.9);
+  opacity: 0.5;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
 
+.popular .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+  border: var(--border)
+}
+
+.popular .slide img {
+  height: 25rem;
+  margin-bottom: 1rem;
+}
+
+.popular .slide h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: var(--black-color);
+}
+
+.popular .slide .price {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+
+/* POPULAR - ENDS */
+
+.swiper-pagination-bullet-active {
+  background: var(--primary-color);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom:0;
+}
 
 /* MENU SECTION - STARTS */
 .menu {
