@@ -32,6 +32,10 @@ var swiper = new Swiper('.menu-swiper', {
   autoHeight: true,
   centeredSlides: true,
   spaceBetween: 20,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: true,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
