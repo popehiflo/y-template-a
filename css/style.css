@@ -414,12 +414,15 @@ section {
 }
 
 .menu .slide .slide-title {
+  width: max-content;
   padding: 1rem;
   font-size: 3rem;
   color: var(--white-color);
   background: var(--primary-color);
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem auto;
+  text-transform: uppercase;
   text-align: center;
+  border-radius: var(--border-radius);
 }
 
 .menu .slide .box-container {
@@ -463,6 +466,12 @@ section {
 .menu .slide .box-container .box:hover {
   transform: scale(0.95);
   cursor: pointer;
+}
+
+.menu .swiper-button-next,
+.menu .swiper-button-prev {
+  top: 3rem;
+  bottom: initial;
 }
 /* MENU SECTION - END */
 
