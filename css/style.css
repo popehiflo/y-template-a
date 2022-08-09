@@ -466,7 +466,30 @@ section {
 }
 /* MENU SECTION - END */
 
+/* GALLERY SECTION - STARTS */
+.gallery .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
 
+.gallery .gallery-container .box {
+  height: 40rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery .gallery-container .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+/* GALLERY SECTION - ENDS */
+
+
+/* CONTACT SECTION - STARTS */
 
 
 
