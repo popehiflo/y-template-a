@@ -54,7 +54,7 @@ section {
   padding: 5rem 10%;
 }
 
-.headig {
+.heading {
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -484,6 +484,28 @@ section {
   height: 100%;
   object-fit: cover;
   border-radius: var(--border-radius);
+}
+
+.gallery .gallery-container .box .icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background: var(--bg-color-dark);
+}
+
+.gallery .gallery-container .box .icon i {
+  font-size: 6rem;
+  color: var(--white-color);
+}
+
+.gallery .gallery-container .box:hover .icon {
+  display: flex;
 }
 
 /* GALLERY SECTION - ENDS */
