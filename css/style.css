@@ -288,7 +288,125 @@ section {
 }
 /* ABOUT - ENDS */
 
+/* POPULAR  - STARTS */
+.popular {
+  background: var(--bg-color-light);
+}
+.popular .slide {
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: var(--border-radius);
+  transform: scale(0.9);
+  opacity: 0.5;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
 
+.popular .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+  border: var(--border)
+}
+
+.popular .slide img {
+  height: 25rem;
+  margin-bottom: 1rem;
+}
+
+.popular .slide h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: var(--black-color);
+}
+
+.popular .slide .price {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.popular-preview-container {
+  background: var(--bg-color-dark);
+  position: fixed;
+  top:0; 
+  left:0;
+  height: 100%;
+  width: 100%;
+  z-index: 1100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular-preview-container .popular-preview {
+  text-align: center;
+  background: var(--white-color);
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  display: none;
+  width: 35rem;
+}
+
+.popular-preview-container .popular-preview.active {
+  display: inline-block;
+  animation:fadeIn 0.4s cubic-bezier(.54,1.3,.63,1.34) backwards;
+}
+
+.popular-preview-container .popular-preview img {
+  height: 25rem;
+  margin-bottom: 1rem;
+}
+
+.popular-preview-container .popular-preview h3 {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  color: var(--black-color);
+}
+
+.popular-preview-container .popular-preview .stars {
+  margin-top: 0.5rem;
+}
+
+.popular-preview-container .popular-preview .stars i {
+  font-size: 1.7rem;
+  color: var(--primary-color);
+}
+
+.popular-preview-container .popular-preview p {
+  font-size: 1.6rem;
+  color: var(--light-black-color);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.popular-preview-container .popular-preview .price {
+  font-size: 2.5rem;
+  color: var(--black-color);
+  margin-bottom: 0.5rem;
+}
+
+#close-preview {
+  position: absolute;
+  top: 1.5rem; 
+  right: 2.5rem;
+  font-size: 6rem;
+  cursor: pointer;
+  color:var(--white-color);
+}
+
+#close-preview:hover {
+  transform: rotate(90deg);
+}
+/* POPULAR - ENDS */
+
+.swiper-pagination-bullet-active {
+  background: var(--primary-color);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom:0;
+}
 
 /* MENU SECTION - STARTS */
 .menu {
