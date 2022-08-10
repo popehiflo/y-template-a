@@ -10,10 +10,8 @@ checkLang.addEventListener("click", () => {
   }
 });
 
-
-
-
 // Boton de header responsive
+let topBar = document.querySelector(".header");
 let navbar = document.querySelector(".header .navbar");
 let menuBtn = document.querySelector("#menu-btn");
 
@@ -23,6 +21,11 @@ menuBtn.onclick = () => {
 };
 
 window.onscroll = () => {
+  if (window.scrollY > 10) {
+    topBar.classList.add("no-sticky");
+  } else {
+    topBar.classList.remove("no-sticky");
+  };
   menuBtn.classList.remove("fa-times");
   navbar.classList.remove("active");
 };
