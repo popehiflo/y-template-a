@@ -114,3 +114,21 @@ var swiper = new Swiper('.menu-swiper', {
     clickable: true,
   },
 });
+
+var swiper = new Swiper('.event-swiper', {
+  grabCursor: true,
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
