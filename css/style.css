@@ -623,6 +623,51 @@ header, section, footer {
 /* GALLERY SECTION - ENDS */
 
 
+/* EVENTS SECTION - STARTS */
+.event {
+  background: var(--bg-color-light);
+}
+
+.event .slide-event {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+.event .slide-event .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.event .slide-event .box-container .box {
+  flex: 1 1 41rem;
+  height: 50rem;
+  border-radius: var(--border-radius);
+}
+
+.event .slide-event .box-container .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.event .slide-event .box-container .box h4 {
+  margin: 1rem 2rem 1rem 1rem;
+  font-size: 3rem;
+  color: var(--black-color);
+  border-bottom: var(--border);
+}
+
+.event .slide-event .box-container .box p {
+  margin: 1rem 2rem 1rem 1rem;
+  font-size: 1.8rem;
+  color: var(--light-black-color);
+  line-height: 2.2rem;
+}
+/* EVENTS SECTION - ENDS */
+
+
 /* CONTACT SECTION - STARTS */
 .contact {
   background: var(--primary-color);
