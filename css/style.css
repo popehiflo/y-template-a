@@ -86,7 +86,7 @@ section {
 }
 
 .btn-primary-icon {
-  background: var(--primary-color);
+  background: var(--black-color);
   color: var(--white-color);
   font-size: 2.5rem;
   height: 4.5rem;
@@ -99,8 +99,8 @@ section {
 }
 
 .btn-primary-icon:hover {
-  background: var(--white-color);
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--black-color);
   border: var(--border);
 }
 
@@ -513,18 +513,23 @@ section {
 
 /* MENU SECTION - STARTS */
 .menu {
-  background: var(--bg-color-dark);
+  background: var(--primary-color);
+}
+
+.menu .heading span {
+  color: var(--white-color);
 }
 
 .menu .slide .slide-title {
   width: max-content;
   padding: 1rem;
   font-size: 3rem;
+  background: var(--black-color);
   color: var(--white-color);
-  background: var(--primary-color);
   margin: 0 auto 3rem auto;
   text-transform: uppercase;
   text-align: center;
+  border: var(--white-color) solid 0.1rem;
   border-radius: var(--border-radius);
 }
 
@@ -625,11 +630,11 @@ section {
 
 /* CONTACT SECTION - STARTS */
 .contact {
-  background: var(--bg-color-dark);
+  background: var(--primary-color);
 }
 
 .contact .heading span {
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .contact .heading h3 {
@@ -693,12 +698,16 @@ section {
   border-radius: var(--border-radius);
 }
 
+.contact .contact-container .btn-primary {
+  width: max-content;
+}
+
 /*-- CONTACT SECTION - ENDS --*/
 /* CONTACT BUTTON - STARTS */
 .contact-button {
   position: fixed;
-  bottom: 6rem;
-  right: 1rem;
+  bottom: 10rem;
+  right: 0;
   z-index: 1000;
 }
 
@@ -787,7 +796,7 @@ section {
   .swiper-button-next,
   .swiper-button-prev{
     top: initial;
-    bottom: 3rem;
+    bottom: 6rem;
   }
   /* .menu .slide .box-container .box {
     flex-flow: column;
