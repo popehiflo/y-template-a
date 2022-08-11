@@ -1,3 +1,17 @@
+// Cambiar idioma
+var checkLang = document.querySelector(".check-lang");
+
+checkLang.addEventListener("click", () => {
+  let chooseEnglish = checkLang.checked;
+  if (chooseEnglish) {
+    location.href = "en/index.html";
+  } else {
+    location.href = "../index.html";
+  }
+});
+
+// Boton de header responsive
+let topBar = document.querySelector(".header");
 let navbar = document.querySelector(".header .navbar");
 let menuBtn = document.querySelector("#menu-btn");
 
@@ -7,6 +21,11 @@ menuBtn.onclick = () => {
 };
 
 window.onscroll = () => {
+  if (window.scrollY > 10) {
+    topBar.classList.add("no-sticky");
+  } else {
+    topBar.classList.remove("no-sticky");
+  };
   menuBtn.classList.remove("fa-times");
   navbar.classList.remove("active");
 };

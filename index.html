@@ -17,10 +17,30 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <section class="publish">
+    <span class="number">
+      <i class="fa-solid fa-mobile-screen"></i>
+      +51 974265159
+    </span>
+    <span class="language">
+      <span class="es">Español</span>
+      <input type="checkbox" class="check-lang">
+      <span class="en">English</span>
+    </span>
+    <span class="media">
+      <a href="https://wa.me/51974265159?text=Me%20gustaría%20hacer%20una%20reserva%20del%20hoy" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/popehiflo/" target="_blank">
+        <i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/popehiflo/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com/popehiflo/" target="_blank"><i class="fab fa-twitter"></i></a>
+    </span>
+  </section>
   <!-- HEADER - starts -->
   <header class="header">
-    <a href="" class="logo">
-      <i class="fas fa-utensils"></i><span> YURAQ</span>
+    <a href="#" class="logo">
+      <img src="img/logo-text-yuraq.svg" alt="logo text Yuraq">
     </a>
     <nav class="navbar">
       <a href="#home">Inicio</a>
@@ -31,7 +51,12 @@
       <a href="#contact">Ubícanos</a>
       <a href="#">Blog</a>
     </nav>
-    <div id="menu-btn" class="fas fa-bars"></div>
+    <span class="botones">
+      <a href="#contact" class="btn-primary">
+        reservar
+      </a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </span>
   </header>
   <!-- HEADER - ends -->
 
@@ -731,9 +756,6 @@
   </section>
   <!-- GALLERY section - ends -->
 
-  <!-- FOOTER section - starts -->
-
-
   <!-- CONTACT section - starts -->
   <section class="contact" id="contact">
     <div class="heading">
@@ -784,19 +806,22 @@
           </div>
         </div>
       </div>
-      <input type="text" value="Enviar Mensaje" class="btn-primary">
+      <input type="button" value="Enviar Mensaje" class="btn-primary">
     </form>
   </section>
   <!-- CONTACT section - ends -->
   <!-- CONTACT button - starts -->
   <div class="contact-button">
-    <a href="https://wa.me/51974265159?text=Me%20gustaría%20hacer%20una%20reserva%20del%20hoy" class="btn-primary-icon" target="_blank">
+    <a href="https://wa.me/51974265159?text=Me%20gustaría%20hacer%20una%20reserva%20del%20hoy" class="btn-icon" target="_blank">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
   </div>
   <!-- CONTACT button - ends -->
 
   <!-- FOOTER section - starts -->
+  <footer>
+
+  </footer>
 
   <!-- Swiper JS link  -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

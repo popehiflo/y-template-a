@@ -3,7 +3,7 @@
 
 :root {
   /* --primary-color: #cd9452; */
-  --primary-color: #fed330; /*--peru*/
+  --primary-color: #feb73d; /*--peru*/
   --black-color: #222; /*--black*/
   --white-color: #fff; /*--white*/
   --light-black-color:#666; /*--light-black*/
@@ -82,14 +82,11 @@ section {
 }
 
 .btn-primary:hover {
-  /* background: var(--white-color); */
-  /* color: var(--primary-color); */
-  letter-spacing: 0.2rem;
-  /* border: 0.1rem solid var(--primary-color); */
+  color: var(--black-color);
 }
 
 .btn-primary-icon {
-  background: var(--primary-color);
+  background: var(--black-color);
   color: var(--white-color);
   font-size: 2.5rem;
   height: 4.5rem;
@@ -102,53 +99,141 @@ section {
 }
 
 .btn-primary-icon:hover {
-  background: var(--white-color);
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--black-color);
   border: var(--border);
 }
+
+/* PUBLISH - STARTS */
+.publish {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 4rem;
+  background: black;
+  color: var(--white-color);
+  font-size: 2rem;
+}
+
+.publish .language .check-lang {
+  margin: -1rem 0.5rem 2rem 0.5rem;
+}
+
+.publish .language .es {
+  color: var(--white-color);
+}
+
+.publish .language .en {
+  color: var(--primary-color);
+}
+
+.publish .language .check-lang {
+  position: relative;
+  width: 4rem;
+}
+
+.publish .language .check-lang::before {
+  content: '';
+  position: absolute;
+  width: 4rem;
+  height: 2rem;
+  background: var(--white-color);
+  border-radius: 2rem;
+}
+
+.publish .language .check-lang::after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background: var(--black-color);
+  border-radius: 2rem;
+  transition: 0.25s;
+  border: 0.1rem solid var(--white-color);
+  box-sizing: border-box;
+}
+
+.publish .language .check-lang:checked::after {
+  left: 2rem;
+  border: 0.1rem solid var(--primary-color);
+}
+
+.publish .language .check-lang:checked::before {
+  background: var(--primary-color);
+}
+
+.publish .media a {
+  color: var(--white-color);
+  font-size: 2.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+/* PUBLISH - ENDS */
 
 /* HEADER - STARTS */
 .header {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background: var(--white-color);
+  background: var(--bg-color-dark);
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: var(--box-shadow);
   position: fixed;
-  top: 0;
+  top: 2;
   left: 0;
   right: 0;
   z-index: 1000;
 }
 
+.no-sticky {
+  position: fixed;
+  top: 0;
+  /* TODO: fix this transition sticky*/
+}
+
 .header .logo {
-  font-size: 2.5rem;
+  margin-top: -1.5rem;
+  margin-bottom: -2rem;
+  /* font-size: 2.5rem;
   font-weight: bolder;
-  color: var(--black-color);
+  color: var(--black-color); */
   /* letter-spacing: 0.2rem; */
 }
 
-.header .logo span {
-  font-family: 'Ibarra Real Nova', sans-serif;
-  font-size: 3rem;
+.header .logo img {
+  width: auto;
+  min-height: 5rem;
 }
 
 .header .navbar a {
   font-size: 2rem;
   margin-left: 2rem;
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .header .navbar a:hover {
   color: var(--primary-color);
 }
 
+.header .botones .btn-primary {
+  padding: 0.3rem 2rem;
+  margin: 0;
+}
+
 #menu-btn {
   font-size: 2.5rem;
   cursor: pointer;
-  color: var(--black-color);
+  color: var(--white-color);
   display: none;
 }
 
@@ -163,11 +248,10 @@ section {
 /* HOME - STARTS */
 .home {
   padding: 0;
-  margin-top: 8rem;
   background: var(--black-color);
 }
 .home .slide {
-  min-height: 94vh;
+  min-height: 98vh;
   background-size: cover !important;
   background-position: center !important;
   position: relative;
@@ -184,8 +268,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--primary-color); /*--bg-color-dark*/
-  opacity: 0.4; /*mio*/
+  background: var(--bg-color-dark); /*--bg-color-dark*/
   z-index: -1;
 }
 
@@ -430,18 +513,23 @@ section {
 
 /* MENU SECTION - STARTS */
 .menu {
-  background: var(--bg-color-light);
+  background: var(--primary-color);
+}
+
+.menu .heading span {
+  color: var(--white-color);
 }
 
 .menu .slide .slide-title {
   width: max-content;
   padding: 1rem;
   font-size: 3rem;
+  background: var(--black-color);
   color: var(--white-color);
-  background: var(--primary-color);
   margin: 0 auto 3rem auto;
   text-transform: uppercase;
   text-align: center;
+  border: var(--white-color) solid 0.1rem;
   border-radius: var(--border-radius);
 }
 
@@ -546,7 +634,7 @@ section {
 }
 
 .contact .heading span {
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .contact .heading h3 {
@@ -610,20 +698,33 @@ section {
   border-radius: var(--border-radius);
 }
 
+.contact .contact-container .btn-primary {
+  width: max-content;
+}
+
 /*-- CONTACT SECTION - ENDS --*/
 /* CONTACT BUTTON - STARTS */
 .contact-button {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 10rem;
+  right: 0;
   z-index: 1000;
 }
 
-.contact-button .btn-primary-icon {
+.contact-button .btn-icon {
   background: green;
+  color: var(--white-color);
+  font-size: 4rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: var(--border-radius);
 }
 
-.contact-button .btn-primary-icon:hover {
+.contact-button .btn-icon:hover {
   background: var(--white-color);
   color: green;
   border: var(--border);
@@ -661,6 +762,10 @@ section {
 }
 
 @media (max-width: 768px) {
+  .publish .media {
+    display: none;
+  }
+
   #menu-btn {
     display: inline-block;
   }
@@ -672,8 +777,9 @@ section {
     top: 99%;
     right: 2rem;
     width: 30rem;
-    background: var(--white-color);
+    background: var(--black-color);
     border: var(--border);
+    border-radius: var(--border-radius);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .header .navbar.active {
@@ -684,10 +790,13 @@ section {
     margin: 2rem;
     text-align: center;
   }
+  .header .botones .btn-primary {
+    margin-right: 2rem;
+  }
   .swiper-button-next,
   .swiper-button-prev{
     top: initial;
-    bottom: 3rem;
+    bottom: 6rem;
   }
   /* .menu .slide .box-container .box {
     flex-flow: column;
