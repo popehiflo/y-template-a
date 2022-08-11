@@ -729,6 +729,7 @@ header, section, footer {
 /* FOOTER SECTION - STARTS */
 .footer {
   background: #111;
+  padding-bottom: 0;
 }
 
 .footer .footer-container {
@@ -801,6 +802,18 @@ header, section, footer {
   border-radius: 2rem;
   padding-left: 2rem;
   font-size: 1.7rem;
+}
+
+.footer .by {
+  padding: 3rem 0 1rem 0;
+  text-align: center;
+  color: var(--white-color);
+  font-size: 1.8rem;
+}
+
+.footer .by a {
+  font-weight: 700;
+  color: var(--white-color);
 }
 /* FOOTER SECTION - ENDS */
 
