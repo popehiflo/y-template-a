@@ -215,11 +215,6 @@ section {
   min-height: 5rem;
 }
 
-/* .header .logo span {
-  font-family: 'Ibarra Real Nova', sans-serif;
-  font-size: 3rem;
-} */
-
 .header .navbar a {
   font-size: 2rem;
   margin-left: 2rem;
@@ -230,13 +225,9 @@ section {
   color: var(--primary-color);
 }
 
-.header .botones {
-  padding-left: 5rem;
-}
-
 .header .botones .btn-primary {
-  margin-top: -1rem;
-  margin-bottom: -1rem;
+  padding: 0.3rem 2rem;
+  margin: 0;
 }
 
 #menu-btn {
@@ -777,8 +768,9 @@ section {
     top: 99%;
     right: 2rem;
     width: 30rem;
-    background: var(--white-color);
+    background: var(--black-color);
     border: var(--border);
+    border-radius: var(--border-radius);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .header .navbar.active {
@@ -788,6 +780,9 @@ section {
     display:block;
     margin: 2rem;
     text-align: center;
+  }
+  .header .botones .btn-primary {
+    margin-right: 2rem;
   }
   .swiper-button-next,
   .swiper-button-prev{
